@@ -36,12 +36,12 @@ jmespath==1.1.0
 jsonpath-ng==1.8.0
 
 # Code sandbox
-RestrictedPython==8.3a1.dev0
+RestrictedPython==8.4
 
 # Email (send + receive)
 aiosmtplib==5.1.2  # SEC H8 — was 5.1.0 (CVE-2026-53533 SMTP CRLF injection)
 aioimaplib==2.0.1
-mail-parser==4.1.4
+mail-parser==4.6.2
 
 # AWS S3
 boto3==1.42.93
