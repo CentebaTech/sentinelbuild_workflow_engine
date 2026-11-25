@@ -16,6 +16,10 @@ dependencies = [
     # service-runtime rails. Pinned to a public commit; bump the ref to pull
     # upstream fixes (see README "Updating smart-llm").
     "smart-llm[db,observability] @ git+https://github.com/CentebaTech/centeba-smart-llm@27e547fef8fd3510a36e7dac4884dc4c5cae4248",
+    # The pinned smart-llm commit doesn't cap sentry-sdk, and sentry-sdk 3 dropped
+    # init(send_default_pii=...) and the fastapi extra, which smart-llm's observability
+    # setup uses. Stay on 2.x until smart-llm is bumped to a commit that caps it.
+    "sentry-sdk[fastapi]>=2.0.0,<3",
     "fastapi>=0.136.0,<0.137.0",
     "uvicorn[standard]>=0.45.0",
     "sqlalchemy[asyncio]>=2.0.49",

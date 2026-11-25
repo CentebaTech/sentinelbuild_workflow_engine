@@ -57,6 +57,8 @@ dukpy==0.6.0  # SEC H8 — was 0.3.1 (JS-eval engine, keep current)
 # pull upstream fixes (see README "Updating smart-llm"). Requires `git` in the
 # build image.
 smart-llm[db,observability] @ git+https://github.com/CentebaTech/centeba-smart-llm@27e547fef8fd3510a36e7dac4884dc4c5cae4248
+# smart-llm's pinned commit leaves sentry-sdk uncapped; sentry-sdk 3 breaks its init call.
+sentry-sdk[fastapi]>=2.0.0,<3
 
 # Utils
 python-dotenv==1.2.2  # SEC H8 — was 1.0.0 (CVE-2026-28684 symlink file overwrite)

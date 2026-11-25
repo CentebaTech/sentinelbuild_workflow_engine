@@ -352,4 +352,4 @@ async def execution_logs_ws(websocket: WebSocket, execution_id: str) -> None:
         pass
     finally:
         await pubsub.unsubscribe(channel)
-        await pubsub.aclose()  # type: ignore[no-untyped-call]  # redis-py PubSub.aclose is untyped
+        await pubsub.aclose()  # type: ignore[no-untyped-call, unused-ignore]  # untyped in older redis-py
