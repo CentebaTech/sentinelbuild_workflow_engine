@@ -3,7 +3,7 @@
 An **n8n-equivalent workflow automation platform** for Python — a durable
 workflow engine with a visual builder, form builder, and execution monitor.
 Built on [Temporal](https://temporal.io) for durable orchestration and
-[smart-llm](https://github.com/centeba/smart-llm) for its agentic AI nodes.
+[smart-llm](https://github.com/CentebaTech/centeba-smart-llm) for its agentic AI nodes.
 Standalone and dependency-clean (no host-platform coupling).
 
 ## Features
@@ -70,7 +70,7 @@ Two front-ends over the same API:
 ## Relationship to smart-llm
 
 The AI layer is **not vendored** — this repo depends on the standalone
-[`smart-llm`](https://github.com/centeba/smart-llm) package (pinned by git ref in
+[`smart-llm`](https://github.com/CentebaTech/centeba-smart-llm) package (pinned by git ref in
 `backend/requirements.txt` and `backend/pyproject.toml`). See the design doc's
 "Updating smart-llm".
 

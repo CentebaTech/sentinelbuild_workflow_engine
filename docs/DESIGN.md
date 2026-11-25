@@ -115,7 +115,7 @@ The AI layer is pinned by commit in `backend/requirements.txt` and
 `backend/pyproject.toml`:
 
 ```
-smart-llm[db,observability] @ git+https://github.com/centeba/smart-llm@<commit>
+smart-llm[db,observability] @ git+https://github.com/CentebaTech/centeba-smart-llm@<commit>
 ```
 
 Bump `<commit>` to a newer `main` SHA (or tag) and re-run the test suite. Pinning
